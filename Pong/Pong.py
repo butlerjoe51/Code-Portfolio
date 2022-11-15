@@ -122,7 +122,7 @@ while True:
                                  left_player, right_player), align="center",
                                  font=("Courier", 24, "normal"))
  
-    # Paddle ball collision statement
+    # Paddle ball collision 
     if (hit_ball.xcor() > 360 and
                         hit_ball.xcor() < 370) and
                         (hit_ball.ycor() < right_pad.ycor()+40 and
