@@ -5,12 +5,12 @@ lemmatizer = WordNetLemmatizer()
 import pickle
 import numpy as np
 from keras.models import load_model
-model = load_model('/home/joseph/python_projects/Chatbot_NLTK/chatbot_model.h5')
+model = load_model('PATH/Chat Bot App/chatbot_model.h5') #PATH = Your directory Path
 import json
 import random
-intents = json.loads(open('/home/joseph/python_projects/Chatbot_NLTK/intents.json').read())
-words = pickle.load(open('/home/joseph/python_projects/Chatbot_NLTK/words.pkl','rb'))
-classes = pickle.load(open('/home/joseph/python_projects/Chatbot_NLTK/classes.pkl','rb'))
+intents = json.loads(open('PATH/Chat Bot App/intents.json').read())
+words = pickle.load(open('PATH/Chat Bot App/words.pkl','rb'))
+classes = pickle.load(open('PATH/Chat Bot App/classes.pkl','rb'))
 
 #Predict the Class
 def clean_up_sentence(sentence):
