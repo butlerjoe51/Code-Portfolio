@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# # Setup
+# Setup
 
 # In[1]:
 
@@ -28,7 +28,7 @@ words = []
 classes = []
 documents = []
 ignore_words = ['?','!']
-data_file = open('/home/joseph/python_projects/Chatbot_NLTK/intents.json').read()
+data_file = open('PATH/Chat Bot App/intents.json').read()
 intents = json.loads(data_file)
 
 
