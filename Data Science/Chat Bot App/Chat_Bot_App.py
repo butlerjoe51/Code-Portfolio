@@ -12,7 +12,7 @@ intents = json.loads(open('PATH/Chat Bot App/intents.json').read())
 words = pickle.load(open('PATH/Chat Bot App/words.pkl','rb'))
 classes = pickle.load(open('PATH/Chat Bot App/classes.pkl','rb'))
 
-#Predict the Class
+# Predict the Class
 def clean_up_sentence(sentence):
     # tokenize the pattern - split words into array
     sentence_words = nltk.word_tokenize(sentence)
@@ -48,7 +48,7 @@ def predict_class(sentence, model):
         return_list.append({"intent": classes[r[0]], "probability": str(r[1])})
     return return_list
   
-  #Get a random response after the prediction
+  # Get a random response after the prediction
 def getResponse(ints, intents_json):
     tag = ints[0]['intent']
     list_of_intents = intents_json['intents']
@@ -62,7 +62,7 @@ def chatbot_response(text):
     res = getResponse(ints, intents)
     return res
   
-  #Make the GUI
+  # Make the GUI
   import tkinter 
 from tkinter import *
 
