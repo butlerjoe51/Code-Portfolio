@@ -1,6 +1,6 @@
 from pytube import YouTube #Install with Pip before running the program
 
-def Download(link):
+def Download(link): #Download function
     youtubeObject = YouTube(link)
     youtubeObject = youtubeObject.streams.get_highest_resolution()
     try:
